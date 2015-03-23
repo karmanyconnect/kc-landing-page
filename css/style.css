@@ -1,0 +1,197 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* =CSS Reset
+--------------------------------------------------------------------------------------------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{outline:none;}
+/* End CSS Reset
+--------------------------------------------------------------------------------------------------*/
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+/* =Toolkit
+--------------------------------------------------------------------------------------------------*/
+
+/* Micro Clearfix Hack by Nicholas Gallagher (http://nicolasgallagher.com/micro-clearfix-hack/) */
+/* For modern browsers */ 
+.cf:before, .cf:after { content:""; display:table; }
+.cf:after { clear:both; }
+/* For IE 6/7 (trigger hasLayout) */
+.cf { zoom:1; }
+
+/* general purpose classes */
+.nodisplay { display:none; }
+.nodisplay_strict { display:none !important; }
+.alignleft { float:left; }
+.alignnone { clear:both;
+	font-size:0;
+	line-height:0;
+	margin:0;
+	padding:0;
+	border:0;
+	height:0;
+	width:0;}
+.alignright { float:right;}
+
+/* End Toolkit
+--------------------------------------------------------------------------------------------------*/
+
+/* =Normalization - mostly derived from normalize.css (https://github.com/necolas/normalize.css/) but without comments and compressed to keep the file small
+--------------------------------------------------------------------------------------------------*/
+
+hr { display:block; height:1px; border:0; margin:1em 0; padding:0;
+	border-top:1px solid #cccccc; /* change border colour to suit your needs */
+}
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+html { overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body, button, input, select, textarea { font-family: sans-serif; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+h1 {}
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, form, fieldset, table, ul {}
+ins {text-decoration: none;}
+del { text-decoration: line-through; }
+abbr[title] { border-bottom: 1px dotted; cursor:help; }
+b, strong { font-weight: bold; }
+dfn { font-style: italic; }
+mark { background: #ff0; color: #000; }
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace;}
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+small { font-size: 75%; }
+sub,sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align:top;}
+svg:not(:root) { overflow: hidden; }
+fieldset { border:0px solid #c0c0c0; margin: 0; padding: 0; }
+legend { border: 0; *margin-left: -7px; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+input, select { vertical-align:middle; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; }
+::-moz-focus-inner {
+border: 0;
+outline: 0;
+}
+html { -webkit-text-size-adjust:none; }
+
+/* End Normalization
+--------------------------------------------------------------------------------------------------*/
+/* =Headings
+--------------------------------------------------------------------------------------------------*/
+h1 { font-family: 'Roboto', Verdana, Geneva, sans-serif; font-size:200%; margin-bottom:20px;}
+h2 { font-family: 'Roboto', Verdana, Geneva, sans-serif; font-size:200%; }
+h3 { font-family: 'Roboto', Verdana, Geneva, sans-serif; font-size:150%; margin-bottom:15px; }
+h4 { font-family: 'Roboto', Verdana, Geneva, sans-serif; font-size:130%;}
+h5 { font-family: 'Roboto', Verdana, Geneva, sans-serif; font-size:110%;}
+h6 { font-family: 'Roboto', Verdana, Geneva, sans-serif; font-size:100%;}
+
+/* =Links
+--------------------------------------------------------------------------------------------------*/
+a {
+	text-decoration:none;
+	color:#000;
+	cursor:pointer !important;
+	outline:0;
+}
+a:hover, a:focus {
+	text-decoration: underline;
+	color:#000;
+}
+
+/* End Links
+--------------------------------------------------------------------------------------------------*/
+p {
+	padding:0 0 0px 0;
+	margin:0 0 20px;
+}
+@font-face {
+    font-family: 'blanchcaps';
+    src: url('BLANCH_CAPS.eot');
+    src: url('BLANCH_CAPS.eot?#iefix') format('embedded-opentype'),
+         url('BLANCH_CAPS.woff2') format('woff2'),
+         url('BLANCH_CAPS.woff') format('woff'),
+         url('BLANCH_CAPS.ttf') format('truetype'),
+         url('BLANCH_CAPS.svg#blanchcaps') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body { background:none; font-family: 'Roboto Condensed', sans-serif; font-weight:400;}
+html { 
+  background: url(../images/bg.jpg) no-repeat top center fixed #002945; }
+.logo a{ color:#fd9800; text-align:center; font-family: 'blanchcaps'; font-size:90px;}
+.logo a:hover{ text-decoration:none;}
+.logo { text-align:center;}
+.comingsoon{ text-align:center; color:#fff; text-transform:uppercase; font-size:24px;}
+.content{text-align:center; padding-top:90px; }
+.content p{ color:#fff; text-transform:uppercase; font-size:38px; font-weight:700; line-height:45px;}
+.invite-launch{ text-align:center; padding-top:130px;}
+.invite-launch p{ font-size:19px; color:#fff;}
+input[type=text], input[type=url], input[type=tel], input[type=number], input[type=color], input[type=email] {
+padding: 5px; border: 1px solid #c4c4c4; font-weight: normal; border-radius: 0; -webkit-appearance: none;
+-moz-box-shadow: inset 0 1px 5px rgba(0,0,0,0.15); -webkit-box-shadow: inset 0 1px 5px rgba(0,0,0,0.15); box-shadow: inset 0 1px 5px rgba(0,0,0,0.15); font-size: 14px; font-family:'Roboto Condensed', Verdana, Geneva, sans-serif;}
+.input-wrap .input	{ height:45px; margin-bottom:10px; -webkit-border-top-left-radius: 10px; width:300px;
+-webkit-border-bottom-left-radius: 10px;
+-moz-border-radius-topleft: 10px;
+-moz-border-radius-bottomleft: 10px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px; float:left; }
+.input-wrap input.btn{ background:#fd9800; font-weight:700; font-size:20px; float:left; height:45px; color:#fff; -webkit-border-top-right-radius: 10px; -webkit-border-bottom-right-radius: 10px; -moz-border-radius-topright: 10px; -moz-border-radius-bottomright: 10px;
+border-top-right-radius: 10px; border-bottom-right-radius: 10px;
+
+-webkit-border-top-left-radius: 0px;
+-webkit-border-bottom-left-radius: 0px;
+-moz-border-radius-topleft: 0px;
+-moz-border-radius-bottomleft: 0px;
+border-top-left-radius:0px;
+border-bottom-left-radius: 0px}
+.input-wrap{ display:inline-block;}
